@@ -1,5 +1,7 @@
 package W1.T3;
 
+import java.util.Random;
+
 /**
  * Advanced Object Oriented Programming with Java, WS 2018
  * Problem: RandomSeqAB.java
@@ -17,12 +19,17 @@ public class RandomSeqAB {
     public static void main(String[] args) {
 
         // command-line argument
-        int n = Integer.parseInt(args[0]);
+        int n = Integer.parseInt(args[2]);
+        int a = Integer.parseInt(args[0]);
+        int b = Integer.parseInt(args[1]);
 
-        // generate and print n numbers between 0 and 1
+        Random r = new Random();
+
+        // generate and print n numbers between a and b
         for (int i = 0; i < n; i++) {
-            System.out.println(Math.random());
-
+            int res = r.nextInt(b - a);
+            res = res + a;
+            System.out.println(res);
         }
     }
 }
