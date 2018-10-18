@@ -5,7 +5,7 @@ package W1.T1;
  * Problem: Quadratic.java
  * Link: http://introcs.cs.princeton.edu/java/12types/Quadratic.java.html
  * @author Clemens Tisch
- * @author YYY
+ * @author Nikodemus Kochanek
  * @version 1.0, 10/23/2018
  *
  * Method : ???

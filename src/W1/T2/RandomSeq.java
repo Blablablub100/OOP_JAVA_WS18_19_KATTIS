@@ -1,11 +1,9 @@
 package W1.T2;
 
-import java.util.Random;
-
 /**
  * Advanced Object Oriented Programming with Java, WS 2018
- * Problem: Quadratic.java
- * Link: http://introcs.cs.princeton.edu/java/12types/Quadratic.java.html
+ * Problem: RandomSeq.java
+ * Link: http://introcs.cs.princeton.edu/java/12types/RandomSeq.java.html
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
  * @version 1.0, 10/23/2018
