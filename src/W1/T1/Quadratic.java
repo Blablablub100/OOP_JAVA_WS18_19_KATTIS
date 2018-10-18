@@ -13,6 +13,7 @@ package W1.T1;
  * Runtime: ???
  */
 
+
 public class Quadratic {
 
      public static void main(String[] args) {
@@ -21,13 +22,17 @@ public class Quadratic {
 
          double discriminant = b * b - 4.0 * c;
 
-         double sqroot = Math.sqrt(discriminant);
+         if (discriminant <= 0) {
+             System.out.println("Error division by 0");
+         } else {
 
-         double root1 = (-b + sqroot) / 2.0;
-         double root2 = (-b - sqroot) / 2.0;
+             double sqroot = Math.sqrt(discriminant);
 
-         System.out.println(root1);
-         System.out.println(root2);
+             double root1 = (-b + sqroot) / 2.0;
+             double root2 = (-b - sqroot) / 2.0;
 
+             System.out.println(root1);
+             System.out.println(root2);
+         }
      }
 }
