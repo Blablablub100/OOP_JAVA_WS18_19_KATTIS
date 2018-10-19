@@ -2,15 +2,15 @@ package W1.T6;
 
 /**
  * Advanced Object Oriented Programming with Java, WS 2018
- * Problem: HelloWorld.java
+ * Problem: HelloWorld.java, Print out Hello World in CLI
  * Link:
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
  * @version 1.0, 10/23/2018
  *
  * Method : ???
- * Status : ???
- * Runtime: ???
+ * Status : Accepted
+ * Runtime: 0.05s
  */
 
 public class HelloWorld {
