@@ -11,8 +11,8 @@ import java.util.Scanner;
  * @version 1.0, 10/23/2018
  *
  * Method : ???
- * Status : ???
- * Runtime: ???
+ * Status : Accepted
+ * Runtime: 0.08
  */
 
 public class ColdputerScience {
