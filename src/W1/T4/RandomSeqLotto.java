@@ -16,7 +16,7 @@ import java.util.Random;
  */
 
 public class RandomSeqLotto {
-    public static void main() {
+    public static void main(String[] args) {
 
         int a = 1;
         int b = 49;
