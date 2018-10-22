@@ -27,15 +27,15 @@ public class ProblemOYoda {
         int[] n = charArrToIntArr(tempN);
         int[] m = charArrToIntArr(tempM);
 
+        // these Strings are going to be the result strings
         String nString = "";
         String mString = "";
 
         int nIndex = n.length-1;
         int mIndex = m.length-1;
 
-        for (int i = 0; (nIndex>0) && (mIndex>0); i++) {
-            nIndex = nIndex-i;
-            mIndex = mIndex-i;
+        // iterates through the loop an compares every integer
+        for (int i = 0; (nIndex>=0) && (mIndex>=0); i++) {
             if (n[nIndex] > m[mIndex]) {
                 nString = n[nIndex] + nString;
             } else if (n[nIndex] < m[mIndex]) {
@@ -44,10 +44,13 @@ public class ProblemOYoda {
                 nString = n[nIndex] + nString;
                 mString = m[mIndex] + mString;
             }
+            nIndex = nIndex-1;
+            mIndex = mIndex-1;
         }
 
-        nString = nString + inputN.substring(0, nIndex);
-        mString = mString + inputM.substring(0, mIndex);
+        // appends the rest of the starting string that does not get compared to the result
+        nString = inputN.substring(0, nIndex+1) + nString;
+        mString = inputM.substring(0, mIndex+1) + mString;
 
         if (nString.equals("")) {
             nString = "YODA";
@@ -60,6 +63,7 @@ public class ProblemOYoda {
         System.out.println(mString);
     }
 
+    // converts an array of chars to an array of ints
     private static int[] charArrToIntArr(char[] arr) {
         int[] res = new int[arr.length];
         for (int i = 0; i < arr.length; i++) {
