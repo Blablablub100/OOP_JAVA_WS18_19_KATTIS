@@ -22,6 +22,7 @@ public class ProblemOYoda {
 
         String inputN = sc.nextLine();
         String inputM = sc.nextLine();
+        sc.close();
         char[] tempN = inputN.toCharArray();
         char[] tempM = inputM.toCharArray();
         int[] n = charArrToIntArr(tempN);

@@ -40,6 +40,8 @@ public class Ladder {
             }
         } while(v > 89);
 
+        sc.close();
+
         // toRadians converts the angle v into Radian to get the Sinus value needed to continue calculating
         tmp = Math.sin( Math.toRadians( (double) v ) );
         res = (double)h / tmp;
