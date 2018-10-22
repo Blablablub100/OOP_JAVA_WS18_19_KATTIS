@@ -40,7 +40,7 @@ public class Jabuke {
 
         // TODO implement method to check if tree is on triangle
 
-        return null;
+        return false;
     }
 
     // returns the size of a triangle
