@@ -23,6 +23,8 @@ public class QuadrantSelection {
         int x = sc.nextInt();
         int y = sc.nextInt();
 
+        sc.close();
+
         if((0 < x && x <= 1000) && (0 < y && y <= 1000)) {
             System.out.println("1");
         } else if((x < 0 && -1000 <= x) && (0 < y && y <= 1000)) {
