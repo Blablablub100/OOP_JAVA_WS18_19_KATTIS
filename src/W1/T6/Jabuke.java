@@ -2,6 +2,19 @@ package W1.T6;
 
 import java.util.Scanner;
 
+/**
+ * Advanced Object Oriented Programming with Java, WS 2018
+ * Problem: Jabuke.java Calculate how many apple trees are on ones lawn
+ * Link: https://open.kattis.com/contests/eu6hf6/problems/yoda
+ * @author Clemens Tisch
+ * @author Nikodemus Kochanek
+ * @version 1.0, 10/23/2018
+ *
+ * Method : ???
+ * Status : ???
+ * Runtime: ???
+ */
+
 public class Jabuke {
 
     private static Scanner sc = new Scanner(System.in);
@@ -17,6 +30,7 @@ public class Jabuke {
 
     }
 
+    // checks if tree is on Triangle true if yes, false if not
     private static boolean treeOnTri(int[][] tri, int[] tree) {
         int x = tree[0];
         int y = tree[1];
@@ -25,8 +39,11 @@ public class Jabuke {
         int[] t3 = tri[3];
 
         // TODO implement method to check if tree is on triangle
+
+        return null;
     }
 
+    // returns the size of a triangle
     private static double calcArea(int[][] tri) {
         double t1 = (double) (tri[0][0] * (tri[1][1]-tri[2][1]));
         double t2 = (double) (tri[1][0] * (tri[2][1]-tri[0][1]));
@@ -34,6 +51,7 @@ public class Jabuke {
         return ((t1+t2+t3)/2);
     }
 
+    // lets the user input a triangle
     private static int[][] getTriangle() {
         int[][] tri = new int[3][];
         for (int i = 0; i < tri.length; i++) {
@@ -42,6 +60,7 @@ public class Jabuke {
         return tri;
     }
 
+    // lets the user input a coordinate
     private static int[] getCoordinate() {
         String[] temp = sc.nextLine().split(" ");
         int[] res = new int[2];
@@ -50,6 +69,7 @@ public class Jabuke {
         return res;
     }
 
+    // lets the user input the tree locations
     private static int[][] getTreeLocs(int amount) {
         int[][] treeLocs = new int[amount][];
         for (int i = 0; i < amount; i++) {
