@@ -55,9 +55,12 @@ public class ProblemOYoda {
 
         if (nString.equals("")) {
             nString = "YODA";
+        } else {
+            nString = String.valueOf(Integer.parseInt(nString));
         }
         if (mString.equals("")) {
             mString = "YODA";
+            mString = String.valueOf(Integer.parseInt(mString));
         }
 
         System.out.println(nString);
