@@ -1,5 +1,7 @@
 package W1.T6;
 
+import java.util.Scanner;
+
 /**
  * Advanced Object Oriented Programming with Java, WS 2018
  * Problem: TimeLoop.java
@@ -9,20 +11,29 @@ package W1.T6;
  * @version 1.0, 10/23/2018
  *
  * Method : ???
- * Status : ???
- * Runtime: ???
+ * Status : Accepted
+ * Runtime: 0.08
  */
 
 public class TimeLoop {
     public static void main(String[] args) {
 
-        int n = Integer.parseInt(args[0]);
+        Scanner sc = new Scanner(System.in);
+
+        boolean run;
+        int n;
+
+        do {
+            run = false;
+            n = sc.nextInt();
+            if(n < 1 || n > 100) run = true;
+        } while(run);   // loops until the entered value is in the value range
+
+        sc.close();
 
         // puts n times counter and Abracadabra out
-        if (n <= 100) {
-            for (int cnt = 1; cnt <= n; cnt++) {
-                System.out.println(cnt + " Abracadabra");
-            }
+        for (int cnt = 1; cnt <= n; cnt++) {
+            System.out.println(cnt + " Abracadabra");
         }
     }
 }

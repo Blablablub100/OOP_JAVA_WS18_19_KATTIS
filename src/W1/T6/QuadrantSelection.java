@@ -11,8 +11,8 @@ import java.util.Scanner;
  * @version 1.0, 10/23/2018
  *
  * Method : ???
- * Status : ???
- * Runtime: ???
+ * Status : Accepted
+ * Runtime: 0.07
  */
 
 public class QuadrantSelection {
@@ -20,18 +20,29 @@ public class QuadrantSelection {
 
         Scanner sc = new Scanner(System.in);
 
-        int x = sc.nextInt();
-        int y = sc.nextInt();
+        int x;
+        int y;
+        boolean run;
+
+        do {
+            run = false;
+
+            x = sc.nextInt();
+            if (x < -1000 || x > 1000 || x == 0) run = true;
+            y = sc.nextInt();
+            if (y < -1000 || y > 1000 || y == 0) run = true;
+        } while(run);   // loops until entered value is in the value range
 
         sc.close();
 
-        if((0 < x && x <= 1000) && (0 < y && y <= 1000)) {
+        // puts out the quadrant number where the point is placed
+        if((x > 0) && (y > 0)) {
             System.out.println("1");
-        } else if((x < 0 && -1000 <= x) && (0 < y && y <= 1000)) {
+        } else if((x < 0) && (y > 0)) {
             System.out.println("2");
-        } else if((x < 0 && -1000 <= x) && (y < 0 && -1000 <= y)) {
+        } else if(x < 0) {
             System.out.println("3");
-        } else if((0 < x && x <= 1000) && (y < 0 && -1000 <= y)) {
+        } else {
             System.out.println("4");
         }
     }
