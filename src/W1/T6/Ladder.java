@@ -11,8 +11,8 @@ import java.util.Scanner;
  * @version 1.0, 10/23/2018
  *
  * Method : ???
- * Status : ???
- * Runtime: ???
+ * Status : Accepted
+ * Runtime: 0.07
  */
 
 public class Ladder {
@@ -21,30 +21,32 @@ public class Ladder {
         // Scannner object is needed for user input
         Scanner sc = new Scanner(System.in);
 
-        int h; // represents the height of the wall
-        int v; // represents the angle between the ladder and the ground
+        String inpt;
+        int h;
+        int v;
         double res;
-        double tmp;
+        boolean run;
 
         do {
-            h = sc.nextInt();
-            if(h > 10000) {
-                System.out.println("Entered height too high. Please enter a height between 1 and 10000");
-            }
-        } while(h > 10000);
+            run = false;
 
-        do {
-            v = sc.nextInt();
-            if(v > 89) {
-                System.out.println("Entered angle too high. Please enter an angle between 1 and 89");
-            }
-        } while(v > 89);
+            inpt = sc.nextLine();
+            String[] tmp = inpt.split(" ");
+
+            h = Integer.valueOf(tmp[0]);
+            if(h < 1 || h > 10000) run = true;
+
+            v = Integer.valueOf(tmp[1]);
+            if(v < 1 || v > 89) run = true;
+        } while(run);   // runs while the input is higher or lower then the accepted values for h and v
 
         sc.close();
 
         // toRadians converts the angle v into Radian to get the Sinus value needed to continue calculating
-        tmp = Math.sin( Math.toRadians( (double) v ) );
-        res = (double)h / tmp;
-        System.out.println( (int) res);
+        res = Math.sin( Math.toRadians( (double)v ));
+        res = h / res;
+
+        // rounds up the value of res and casts it into an int to output correctly
+        System.out.println((int)Math.ceil(res));
     }
 }
