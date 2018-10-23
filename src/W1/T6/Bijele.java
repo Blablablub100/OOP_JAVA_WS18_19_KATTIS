@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * Method : ???
  * Status : Accepted
- * Runtime: 0.08
+ * Runtime: 0.07
  */
 
 public class Bijele {
@@ -26,18 +26,19 @@ public class Bijele {
 
         do {
             run = false;
-            String inputa = sc.nextLine();
 
-            String inputb[] = inputa.split(" ");
+            String aInput = sc.nextLine();
+            String bInput[] = aInput.split(" ");    // splits the values of aInput into bInput
 
             for (int i = 0; i < 6; i++) {
-                tmp[i] = Integer.valueOf(inputb[i]);
+                tmp[i] = Integer.valueOf(bInput[i]);
                 if (tmp[i] < 0 || tmp[i] > 10) run = true;
             }
-        } while(run);
+        } while(run); // loops while the entered values are out of the value range
 
         sc.close();
 
+        // calculates how many pieces of each type needs to be added or removed
         res[0] = 1 - tmp[0];
         res[1] = 1 - tmp[1];
         res[2] = 2 - tmp[2];
