@@ -11,8 +11,8 @@ import java.util.Scanner;
  * @version 1.0, 10/23/2018
  *
  * Method : ???
- * Status : ???
- * Runtime: ???
+ * Status : Accepted
+ * Runtime: 0.08s
  */
 
 public class Jabuke {
@@ -25,22 +25,34 @@ public class Jabuke {
         int[][] treeLocs = getTreeLocs(amount);
         double area = calcArea(tri);
 
-        System.out.println(area);
+        System.out.format("%.1f", area);
 
-
+        int cnt = 0;
+        for (int i = 0; i < amount; i++) {
+            if (treeOnTri(tri, treeLocs[i], area)) cnt++;
+        }
+        System.out.println("\n"+cnt);
     }
 
     // checks if tree is on Triangle true if yes, false if not
-    private static boolean treeOnTri(int[][] tri, int[] tree) {
-        int x = tree[0];
-        int y = tree[1];
-        int[] t1 = tri[1];
-        int[] t2 = tri[2];
-        int[] t3 = tri[3];
+    private static boolean treeOnTri(int[][] tri, int[] tree, double area) {
+        // splits the triangle in 3 small triangles
+        int[][] tri1 = new int[][] {
+                tree, tri[0], tri[1]
+        };
+        int[][] tri2 = new int[][] {
+                tree, tri[1], tri[2]
+        };
+        int[][] tri3 = new int[][] {
+                tree, tri[2], tri[0]
+        };
+        double a1 = calcArea(tri1);
+        double a2 = calcArea(tri2);
+        double a3 = calcArea(tri3);
 
-        // TODO implement method to check if tree is on triangle
-
-        return false;
+        // if the sum of the areas of the 3 triangles is the same as the area of the triangle
+        // , the point is on the triangle
+        return (area == (a1+a2+a3));
     }
 
     // returns the size of a triangle
@@ -48,7 +60,7 @@ public class Jabuke {
         double t1 = (double) (tri[0][0] * (tri[1][1]-tri[2][1]));
         double t2 = (double) (tri[1][0] * (tri[2][1]-tri[0][1]));
         double t3 = (double) (tri[2][0] * (tri[0][1]-tri[1][1]));
-        return ((t1+t2+t3)/2);
+        return Math.abs(((t1+t2+t3)/2));
     }
 
     // lets the user input a triangle
