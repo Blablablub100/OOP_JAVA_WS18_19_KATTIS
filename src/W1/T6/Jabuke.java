@@ -24,6 +24,7 @@ public class Jabuke {
         int amount = Integer.valueOf(sc.nextLine());
         int[][] treeLocs = getTreeLocs(amount);
         double area = calcArea(tri);
+        sc.close();
 
         System.out.format("%.1f", area);
 
