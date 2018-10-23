@@ -38,8 +38,8 @@ public class JustAMinute {
         double endRes;
         int bIndex = 0;
 
-        // loops while the entered values are out of the value range and splits the values of the entered string into
-        // another
+        // loops while the entered values are out of the value range
+        // splits the values of the entered string into other Strings to get the values out of the Strings
         do {
             run = false;
             for (int i = 0; i < cnt; i++) {

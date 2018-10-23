@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Advanced Object Oriented Programming with Java, WS 2018
  * Problem: Jabuke.java Calculate how many apple trees are on ones lawn
- * Link: https://open.kattis.com/contests/eu6hf6/problems/yoda
+ * Link: https://open.kattis.com/contests/eu6hf6/problems/jabuke
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
  * @version 1.0, 10/23/2018
