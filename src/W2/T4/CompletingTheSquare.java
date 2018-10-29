@@ -8,7 +8,7 @@ import java.util.Scanner;
  * Link: https://open.kattis.com/contests/pp5rtp/problems/completingthesquare
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
- * @version 1.0, 10/23/2018
+ * @version 1.0, 10/29/2018
  *
  * Method : ???
  * Status : Not Accepted
