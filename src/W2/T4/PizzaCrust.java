@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * Advanced Object Oriented Programming with Java, WS 2018
- * Problem: Find out how much percent of cheese a pizza has
+ * Problem: Finds out how much percent of cheese a pizza has
  * Link: https://open.kattis.com/contests/pp5rtp/problems/pizza2
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
