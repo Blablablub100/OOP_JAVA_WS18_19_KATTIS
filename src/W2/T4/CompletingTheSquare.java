@@ -25,23 +25,39 @@ public class CompletingTheSquare {
         Point c = readPoint(sc);
         sc.close();
 
-        int distAB = getDistance(a, b);
-        int distBC = getDistance(b, c);
-        int distAC = getDistance(a, c);
+        double distAB = getDistance(a, b);
+        double distBC = getDistance(b, c);
+        double distAC = getDistance(a, c);
 
         Point res = new Point(0, 0);
         if (distAB > distBC && distAB > distAC) {
-            int x = c.x + Math.abs(b.y-a.y);
+            Line bc = getLine(b,c);
+            bc.moveTo(a);
+            Line ac = getLine(a,c);
+            ac.moveTo(b);
+            res = getCrossing(bc, ac);
+            /*int x = c.x + Math.abs(b.y-a.y);
             int y = c.y + Math.abs(b.x-a.x);
-            res = new Point(x, y);
+            res = new Point(x, y);*/
         } else if (distBC > distAB && distBC > distAC) {
-            int x = a.x + Math.abs(c.y-b.y);
+            Line ab = getLine(a,b);
+            ab.moveTo(c);
+            Line ac = getLine(a,c);
+            ac.moveTo(b);
+            res = getCrossing(ab, ac);
+            /*int x = a.x + Math.abs(c.y-b.y);
             int y = a.y + Math.abs(c.x-b.x);
-            res = new Point(x, y);
+            res = new Point(x, y);*/
         } else if (distAC > distAB && distAC > distBC) {
+            Line ab = getLine(a,b);
+            ab.moveTo(c);
+            Line bc = getLine(b,c);
+            bc.moveTo(a);
+            res = getCrossing(ab, bc);
+            /*
             int x = b.x + Math.abs(a.y - c.y);
             int y = b.y + Math.abs(a.x - c.x);
-            res = new Point(x, y);
+            res = new Point(x, y);*/
         } else {
             System.out.println("ERROR!");
         }
@@ -49,9 +65,21 @@ public class CompletingTheSquare {
         System.out.println(res.x + " "+res.y);
     }
 
-    private static int getDistance(Point a, Point b) {
-        return(Math.abs(a.x - b.x)
-                + Math.abs(a.y - b.y));
+    private static Point getCrossing(Line l1, Line l2) {
+        int x = (int) ((l2.b-l1.b) / (l1.m-l2.m));
+        int y = (int) (l1.m * ((l2.b-l1.b)/(l1.m-l2.m))+l1.b);
+        return new Point(x, y);
+    }
+
+    private static Line getLine(Point a, Point b) {
+        double m = (((double)(b.y - a.y)) / ((double)(b.x - a.x)));
+        double bl = a.y - (m*a.x);
+        return new Line(m, bl);
+    }
+
+    private static double getDistance(Point a, Point b) {
+        double dis = Math.sqrt((b.x-a.x)*(b.x-a.x) + (b.y-a.y)*(b.y-a.y));
+        return(dis);
     }
 
     private static Point readPoint(Scanner sc) {
@@ -66,5 +94,19 @@ class Point {
     public Point(int x, int y) {
         this.x = x;
         this.y = y;
+    }
+}
+
+class Line {
+    public double m;
+    public double b;
+
+    public Line(double m, double b) {
+        this.m = m;
+        this.b = b;
+    }
+
+    public void moveTo(Point p) {
+        b = (double) p.y - (m* (double)p.x);
     }
 }
