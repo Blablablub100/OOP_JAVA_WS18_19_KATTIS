@@ -2,8 +2,7 @@ package W3.T1;
 
 import java.awt.*;
 
-public class RectanglePlus
-        implements Relatable {
+public class RectanglePlus implements Relatable {
     public int width = 0;
     public int height = 0;
     public Point origin;
@@ -48,6 +47,22 @@ public class RectanglePlus
             return 1;
         else
             return 0;
+    }
+
+    public Object clone() {
+        return new RectanglePlus(
+                this.origin
+                , this.width
+                , this.height
+        );
+    }
+
+    public String toString() {
+        String res = "";
+        res = res + "x: "+origin.x + " y: " + origin.y;
+        res = res + " width: " + width;
+        res = res + " height: "+height;
+        return res;
     }
 }
 
