@@ -4,7 +4,7 @@ import java.util.*;
 
 /**
  * Advanced Object Oriented Programming with Java, WS 2018
- * Problem: Everywhere.java
+ * Problem: Everywhere.java calculates in how many different cities Alice was
  * Link: https://open.kattis.com/contests/ntt8xa/problems/everywhere
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
