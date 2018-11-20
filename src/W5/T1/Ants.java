@@ -2,6 +2,19 @@ package W5.T1;
 
 import java.util.Scanner;
 
+/**
+ * Advanced Object Oriented Programming with Java, WS 2018
+ * Problem: Calculates when Ants fall of a pole
+ * Link: https://open.kattis.com/contests/ww2rp4/problems/ants
+ * @author Clemens Tisch
+ * @author Nikodemus Kochanek
+ * @version 1.0, 11/19/2018
+ *
+ * Method : ???
+ * Status : Accepted
+ * Runtime: 0.62
+ */
+
 public class Ants {
 
     public static void main(String[] args) {
@@ -9,14 +22,13 @@ public class Ants {
         TestCase[] input = getInput();
 
         for (TestCase c: input) {
-            int minTime = 0;
-            int maxTime = 0;
-
-            // output minimum
-            int[] dists = getDistances(c);
-            System.out.println(getMax(dists));
+            // dists[1] = maximum distance to fall of, dists[0] minimum
+            int[][] dists = getDistances(c);
+            // output minimum time
+            System.out.print(getMax(dists[1]) + " ");
+            // output maximum time
+            System.out.println(getMax(dists[0]));
         }
-        //TODO DO MAXIMUM TOO
     }
 
     private static int getMax(int[] arr) {
@@ -29,17 +41,32 @@ public class Ants {
         return max;
     }
 
-    private static int[] getDistances(TestCase c) {
-        int[] dists = new int[c.numOfAnts];
+    // return array of min/ max distances to pole
+    private static int[][] getDistances(TestCase c) {
+        int[] maxDists = new int[c.numOfAnts];
+        int[] minDists = new int[c.numOfAnts];
+
         for (int i = 0; i < c.numOfAnts; i++) {
-            int dist = Math.abs(c.length - c.antLoc[i]);
-            dists[i] = dist;
+            int dist1 = Math.abs(c.length - c.antLoc[i]);
+            int dist2 = Math.abs(c.antLoc[i] - 0);
+            if (dist1 > dist2) {
+                maxDists[i] = dist1;
+                minDists[i] = dist2;
+            } else if (dist1 < dist2) {
+                maxDists[i] = dist2;
+                minDists[i] = dist1;
+            } else if (dist1 == dist2) {
+                maxDists[i] = dist1;
+                minDists[i] = dist1;
+            }
         }
-        return dists;
+        int[][] res = {maxDists, minDists};
+        return res;
     }
 
+    // gets user Input, and returns TestCase Objects
     private static TestCase[] getInput() {
-        TestCase[] cases = null;
+        TestCase[] cases;
         Scanner sc = new Scanner(System.in);
         int cnt = sc.nextInt();
         cases = new TestCase[cnt];
