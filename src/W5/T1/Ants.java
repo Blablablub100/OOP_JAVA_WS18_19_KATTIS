@@ -88,7 +88,6 @@ public class Ants {
     }
 }
 
-
 class TestCase {
     int length;
     int numOfAnts;

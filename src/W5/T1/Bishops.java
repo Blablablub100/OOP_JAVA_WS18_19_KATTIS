@@ -1,4 +1,4 @@
-package W5.TKattis;
+package W5.T1;
 
 import java.util.Scanner;
 
