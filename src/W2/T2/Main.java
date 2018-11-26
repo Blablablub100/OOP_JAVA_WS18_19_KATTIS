@@ -8,7 +8,7 @@ package W2.T2;
  * @author Nikodemus Kochanek
  * @version 1.0, 10/30/2018
  *
- * Method : ???
+ * Method : Ad-Hoc
  * Status : ???
  * Runtime: ???
  */

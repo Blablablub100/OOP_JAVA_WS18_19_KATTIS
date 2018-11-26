@@ -10,7 +10,7 @@ import java.util.Random;
  * @author Nikodemus Kochanek
  * @version 1.0, 10/23/2018
  *
- * Method : ???
+ * Method : Ad-Hoc
  * Status : ???
  * Runtime: ???
  */

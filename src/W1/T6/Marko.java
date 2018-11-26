@@ -5,12 +5,12 @@ import java.util.Scanner;
 /**
  * Advanced Object Oriented Programming with Java, WS 2018
  * Problem: Marko.java checks if String is possible with certain keys of a T9 keyboard.
- * Link: https://open.kattis.com/contests/eu6hf6/problems/yoda
+ * Link: https://open.kattis.com/contests/eu6hf6/problems/ladder
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
  * @version 1.0, 10/23/2018
  *
- * Method : ???
+ * Method : Ad-Hoc
  * Status : Accepted
  * Runtime: 0.22s
  */

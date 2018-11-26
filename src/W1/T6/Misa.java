@@ -10,9 +10,9 @@ import java.util.Scanner;
  * @author Nikodemus Kochanek
  * @version 1.0, 10/23/2018
  *
- * Method : ???
- * Status : ???
- * Runtime: ???
+ * Method : Ad-Hoc
+ * Status : Accepted
+ * Runtime: 0.08
  */
 
 public class Misa {

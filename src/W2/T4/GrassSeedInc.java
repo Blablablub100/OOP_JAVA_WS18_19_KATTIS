@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 /**
  * Advanced Object Oriented Programming with Java, WS 2018
- * Problem: GrassSeed.java calculates the cost to sow all of the lawns
+ * Problem: GrassSeedInc.java calculates the cost to sow all of the lawns
  * Link: https://open.kattis.com/contests/pp5rtp/problems/grassseed
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
  * @version 1.0, 10/30/2018
  *
- * Method : ???
- * Status : ???
- * Runtime: ???
+ * Method : Ad-Hoc
+ * Status : Accepted
+ * Runtime: 0.12
  */
 
 public class GrassSeedInc {
@@ -25,6 +25,7 @@ public class GrassSeedInc {
         double y;
         double res = 0.0;
 
+        // input and calculation of the cost
         for(int i = 0; i < L; i++) {
             x = sc.nextDouble();
             y = sc.nextDouble();
