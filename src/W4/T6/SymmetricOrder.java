@@ -8,9 +8,9 @@ import java.util.*;
  * Link: https://open.kattis.com/contests/ww2rp4/problems/symmetricorder
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
- * @version 1.0, 11/12/2018
+ * @version 1.0, 11/15/2018
  *
- * Method : ???
+ * Method : Ad-Hoc
  * Status : Accepted
  * Runtime: 0.08
  */

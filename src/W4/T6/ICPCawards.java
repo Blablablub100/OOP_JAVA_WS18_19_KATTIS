@@ -10,7 +10,7 @@ import java.util.Scanner;
  * Link: https://open.kattis.com/contests/ww2rp4/problems/icpcawards
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
- * @version 1.0, 11/08/2018
+ * @version 1.0, 11/15/2018
  *
  * Method : ???
  * Status : Accepted

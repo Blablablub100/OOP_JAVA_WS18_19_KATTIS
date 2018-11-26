@@ -1,5 +1,18 @@
 package W4.T5;
 
+/**
+ * Advanced Object Oriented Programming with Java, WS 2018
+ * Problem: Exercise 4 Task 5
+ * Link:
+ * @author Clemens Tisch
+ * @author Nikodemus Kochanek
+ * @version 1.0, 11/15/2018
+ *
+ * Method : Ad-Hoc
+ * Status : ???
+ * Runtime: ???
+ */
+
 import W4.T4.FileIO;
 
 public class Verificator {

@@ -1,5 +1,18 @@
 package W4.T4;
 
+/**
+ * Advanced Object Oriented Programming with Java, WS 2018
+ * Problem: Exercise 4 Task 4
+ * Link:
+ * @author Clemens Tisch
+ * @author Nikodemus Kochanek
+ * @version 1.0, 11/15/2018
+ *
+ * Method : Ad-Hoc
+ * Status : ???
+ * Runtime: ???
+ */
+
 import java.util.Random;
 
 public class Mixer {
