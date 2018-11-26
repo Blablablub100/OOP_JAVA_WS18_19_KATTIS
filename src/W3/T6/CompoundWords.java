@@ -22,10 +22,8 @@ public class CompoundWords {
         // user input
         List<String> input = new ArrayList<String>();
         Scanner sc = new Scanner(System.in);
-        boolean run = true;
-        //while (sc.hasNext())
-        //    input.add(sc.next());
-        input.addAll(Arrays.asList(sc.nextLine().split(" ")));
+        while (sc.hasNext())
+            input.add(sc.next());
         sc.close();
 
         // Hashset is used to remove duplicates

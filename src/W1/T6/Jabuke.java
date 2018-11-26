@@ -23,8 +23,8 @@ public class Jabuke {
         int[][] tri = getTriangle();
         int amount = Integer.valueOf(sc.nextLine());
         int[][] treeLocs = getTreeLocs(amount);
-        double area = calcArea(tri);
         sc.close();
+        double area = calcArea(tri);
 
         System.out.format("%.1f", area);
 
