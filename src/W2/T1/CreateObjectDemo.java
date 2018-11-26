@@ -39,7 +39,7 @@ package W2.T1;
  * @author Nikodemus Kochanek
  * @version 1.0, 10/25/2018
  *
- * Method : ???
+ * Method : Ad-Hoc
  * Status : ???
  * Runtime: ???
  */
