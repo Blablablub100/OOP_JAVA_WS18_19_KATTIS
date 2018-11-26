@@ -5,12 +5,12 @@ import java.util.Scanner;
 /**
  * Advanced Object Oriented Programming with Java, WS 2018
  * Problem: Calculates when to broadcast pizza commercial
- * Link: https://open.kattis.com/contests/ww2rp4/problems/alphabetspam
+ * Link: https://open.kattis.com/problems/commercials
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
- * @version 1.0, 11/19/2018
+ * @version 1.0, 11/22/2018
  *
- * Method : ???
+ * Method : Ad-Hoc
  * Status : Accepted
  * Runtime: 0.22
  */

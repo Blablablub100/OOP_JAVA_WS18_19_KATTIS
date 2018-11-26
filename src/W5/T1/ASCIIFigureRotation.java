@@ -1,5 +1,19 @@
 package W5.T1;
 
+/**
+ * Advanced Object Oriented Programming with Java, WS 2018
+ * Problem: ASCIIFigureRotation
+ * Link: https://open.kattis.com/contests/ww2rp4/problems/asciifigurerotation
+ * @author Clemens Tisch
+ * @author Nikodemus Kochanek
+ * @version 1.0, 11/22/2018
+ *
+ * Method : Ad-Hoc
+ * Status : Not Accepted
+ * Runtime: ???
+ */
+
+
 import java.util.Scanner;
 
 public class ASCIIFigureRotation {

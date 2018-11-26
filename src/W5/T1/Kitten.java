@@ -1,5 +1,18 @@
 package W5.T1;
 
+/**
+ * Advanced Object Oriented Programming with Java, WS 2018
+ * Problem: Checks if 8 queens are placed on a chess board correctly
+ * Link: https://open.kattis.com/problems/kitten
+ * @author Clemens Tisch
+ * @author Nikodemus Kochanek
+ * @version 1.0, 11/22/2018
+ *
+ * Method : Ad-Hoc
+ * Status : Not Accepted
+ * Runtime: ???
+ */
+
 import java.util.Scanner;
 
 public class Kitten {
