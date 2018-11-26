@@ -37,7 +37,7 @@ package W2.T1;
  * Link: https://docs.oracle.com/javase/tutorial/displayCode.html?code=https://docs.oracle.com/javase/tutorial/java/javaOO/examples/CreateObjectDemo.java
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
- * @version 1.0, 10/25/2018
+ * @version 1.0, 11/01/2018
  *
  * Method : Ad-Hoc
  * Status : ???

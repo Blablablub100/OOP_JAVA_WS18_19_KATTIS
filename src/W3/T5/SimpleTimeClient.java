@@ -1,5 +1,19 @@
 package W3.T5;
 
+/**
+ * Advanced Object Oriented Programming with Java, WS 2018
+ * Problem: Exercise 3 Task 5
+ * Link: https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html
+ * @author Clemens Tisch
+ * @author Nikodemus Kochanek
+ * @version 1.0, 11/08/2018
+ *
+ * Method : Ad-Hoc
+ * Status : ???
+ * Runtime: ???
+ */
+
+
 import java.time.*;
 import java.lang.*;
 import java.util.*;

@@ -6,7 +6,7 @@ package W2.T1;
  * Link: exercises02.pdf
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
- * @version 1.0, 10/25/2018
+ * @version 1.0, 11/01/2018
  *
  * Method : Ad-Hoc
  * Status : ???

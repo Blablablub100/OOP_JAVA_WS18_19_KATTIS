@@ -8,9 +8,9 @@ import java.util.Scanner;
  * Link: https://open.kattis.com/problems/heliocentric
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
- * @version 1.0, 01/11/2018
+ * @version 1.0, 11/08/2018
  *
- * Method : ???
+ * Method : Ad-Hoc
  * Status : Accepted
  * Runtime: 0.08
  */

@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 /**
  * Advanced Object Oriented Programming with Java, WS 2018
- * Problem: Checks wether a number is a happy prime
+ * Problem: Checks whether a number is a happy prime
  * Link: https://open.kattis.com/problems/happyprime
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
- * @version 1.0, 01/11/2018
+ * @version 1.0, 11/08/2018
  *
- * Method : ???
+ * Method : Ad-Hoc
  * Status : Accepted
  * Runtime: 0.36
  */

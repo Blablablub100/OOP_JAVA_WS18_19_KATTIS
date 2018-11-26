@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 /**
  * Advanced Object Oriented Programming with Java, WS 2018
- * Problem: Calculating the distance your finger has to travel when unlockin a device
+ * Problem: Calculating the distance your finger has to travel when unlocking a device
  * locked with a pattern.
- * Link: https://open.kattis.com/contests/pp5rtp/problems/bus
+ * Link: https://open.kattis.com/problems/unlockpattern
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
- * @version 1.0, 01/11/2018
+ * @version 1.0, 11/08/2018
  *
- * Method : ???
+ * Method : Ad-Hoc
  * Status : Accepted
  * Runtime: 0.07
  */

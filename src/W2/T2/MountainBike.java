@@ -7,7 +7,7 @@ package W2.T2;
  * /classes.html
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
- * @version 1.0, 10/25/2018
+ * @version 1.0, 11/01/2018
  *
  * Method : Ad-Hoc
  * Status : ???

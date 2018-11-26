@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @author Nikodemus Kochanek
  * @version 1.0, 11/08/2018
  *
- * Method : ???
+ * Method : Ad-Hoc
  * Status : Accepted
  * Runtime: 0.07
  */

@@ -5,12 +5,12 @@ import java.util.*;
 /**
  * Advanced Object Oriented Programming with Java, WS 2018
  * Problem: Putting words together
- * Link: https://open.kattis.com/contests/pp5rtp/problems/bus
+ * Link: https://open.kattis.com/contests/ww2rp4/problems/compoundwords
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
- * @version 1.0, 01/11/2018
+ * @version 1.0, 11/08/2018
  *
- * Method : ???
+ * Method : Ad-Hoc
  * Status : Accepted
  * Runtime: 0.07
  */
