@@ -1,8 +1,6 @@
 package W4.T4;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.*;
 
 public class FileIO {
 
@@ -27,5 +25,13 @@ public class FileIO {
             e.printStackTrace();
         }
         return stringBuilder.toString();
+    }
+
+    public void writeFile(String filename, String content) {
+        try (BufferedWriter custBuffer = new BufferedWriter(new FileWriter(filename))) {
+            custBuffer.write(content);
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
     }
 }

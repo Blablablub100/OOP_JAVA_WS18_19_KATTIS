@@ -10,6 +10,7 @@ public class Mixer {
         System.out.println(input);
 
         for (int i = 0; i < input.length(); i++) {
+            // if there is a letter, this means there is a word...
             if (isLetter(input.charAt(i))) {
 
                 int l = i+1;
@@ -20,10 +21,12 @@ public class Mixer {
                 }
                 int r = i-1;
 
+                // ... so mix it up
                 input = mix(input, l, r);
             }
         }
         System.out.println(input);
+        rw.writeFile("src/W4/T4/text.out", input);
     }
 
     private static boolean isLetter(Character c) {
@@ -38,11 +41,13 @@ public class Mixer {
         return true;
     }
 
+    // scrambles the letters in a string from l to r
     private static String mix(String inp, int l, int r) {
         StringBuilder input = new StringBuilder(inp);
         Random rand = new Random();
         int length = r-l;
 
+        // changes every char randomly to a random space
         for (int i = 0; i < length; i++) {
             int curr_index = l + i;
             int new_index = l + rand.nextInt(length);
