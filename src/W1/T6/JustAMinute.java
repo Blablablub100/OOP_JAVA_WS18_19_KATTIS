@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 /**
  * Advanced Object Oriented Programming with Java, WS 2018
- * Problem: JustAMinute.java
+ * Problem: JustAMinute.java calculates how long a Super Lag minute is
  * Link: https://open.kattis.com/contests/eu6hf6/problems/justaminute
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
  * @version 1.0, 10/23/2018
  *
- * Method : ???
+ * Method : Ad-Hoc
  * Status : Accepted
  * Runtime: 0.13
  */

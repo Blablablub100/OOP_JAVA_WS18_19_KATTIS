@@ -8,7 +8,7 @@ package W1.T1;
  * @author Nikodemus Kochanek
  * @version 1.0, 10/23/2018
  *
- * Method : ???
+ * Method : Ad-Hoc
  * Status : ???
  * Runtime: ???
  */
@@ -17,6 +17,8 @@ package W1.T1;
 public class Quadratic {
 
      public static void main(String[] args) {
+
+         // command-line argument
          double b = Double.parseDouble(args[0]);
          double c = Double.parseDouble(args[1]);
 

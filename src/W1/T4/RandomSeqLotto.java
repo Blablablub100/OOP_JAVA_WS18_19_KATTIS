@@ -10,7 +10,7 @@ import java.util.Random;
  * @author Nikodemus Kochanek
  * @version 1.0, 10/23/2018
  *
- * Method : ???
+ * Method : Ad-Hoc
  * Status : ???
  * Runtime: ???
  */
@@ -24,6 +24,7 @@ public class RandomSeqLotto {
 
         Random r = new Random();
 
+        // makes random lotto numbers
         for (int i = 1; i <= n; i++) {
             int res = r.nextInt(b - a);
             res = res + a;

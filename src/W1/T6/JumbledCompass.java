@@ -5,12 +5,12 @@ import java.util.Scanner;
 /**
  * Advanced Object Oriented Programming with Java, WS 2018
  * Problem: JumbledCompass.java calculates the shortest distance between two points in a compass
- * Link: https://open.kattis.com/contests/eu6hf6/problems/yoda
+ * Link: https://open.kattis.com/contests/eu6hf6/problems/compass
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
  * @version 1.0, 10/23/2018
  *
- * Method : ???
+ * Method : Ad-Hoc
  * Status : Accepted
  * Runtime: 0.07
  */

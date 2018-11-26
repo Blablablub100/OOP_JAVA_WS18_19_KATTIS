@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 /**
  * Advanced Object Oriented Programming with Java, WS 2018
- * Problem: Faktor.java
+ * Problem: Faktor.java calculates the impact factor of a scientific journal
  * Link: https://open.kattis.com/contests/eu6hf6/problems/faktor
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
  * @version 1.0, 10/23/2018
  *
- * Method : ???
+ * Method : Ad-Hoc
  * Status : Accepted
  * Runtime: 0.07
  */

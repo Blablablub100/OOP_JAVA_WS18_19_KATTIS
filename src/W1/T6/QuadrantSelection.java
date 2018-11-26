@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 /**
  * Advanced Object Oriented Programming with Java, WS 2018
- * Problem: QuadrantSelection.java
+ * Problem: QuadrantSelection.java calculates in which quadrant the point is
  * Link: https://open.kattis.com/contests/eu6hf6/problems/quadrant
  * @author Clemens Tisch
  * @author Nikodemus Kochanek
  * @version 1.0, 10/23/2018
  *
- * Method : ???
+ * Method : Ad-Hoc
  * Status : Accepted
  * Runtime: 0.07
  */
